@@ -3,6 +3,7 @@ import Hero from "@/components/custom/Hero";
 import Navbar from "@/components/custom/Navbar";
 import Box from "@/components/custom/Box";
 import Image from "next/image";
+import Me from "@/components/custom/Me";
 
 export default function Home() {
   return (
@@ -10,11 +11,7 @@ export default function Home() {
     <Navbar/>
     <Box/>
     <Hero/>
-    <div className='pt-16'>
-    <p className='heading'>hi from Andrew</p>
-    <p className='subheading'>hi from Andrew</p>
-      <p className='paragraph'>hi from Andrew</p>hi from Andrew
-      </div>
+    <Me/>
       <Footer/>
     </main>
   );

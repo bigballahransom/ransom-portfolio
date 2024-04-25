@@ -44,6 +44,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Box from './Box'
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -53,8 +54,13 @@ const Hero = () => {
     <div class="text-center lg:w-2/3 w-full">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Software Engineer</h1>
       <p class="mb-8 leading-relaxed">A multi-tool of business and technical skills. Goal oriented individual, with strong problem-solving skills. I bring a track record of success working in a start-up environment. Strong entrepreneurial spirit, hard working, and up for new challenges!</p>
-      <div class="flex justify-center">
-        <button class="button">Button</button>
+      <div class="flex justify-center gap-2">
+        <Link href='/contact'>
+        <button class="button">Contact</button>
+        </Link>
+        <Link href='https://github.com/bigballahransom'>
+        <Image src='/assets/images/git.png' width={40} height={10} className='text-white'/>
+        </Link>
       </div>
     </div>
   </div>

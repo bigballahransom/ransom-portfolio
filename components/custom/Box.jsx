@@ -54,25 +54,26 @@ export function Model(props) {
 //   }, []);
   useFrame( () => {
 
-    mesh.current.rotation.y += 0.015
+    mesh.current.rotation.y += 0.02
     mesh.current.rotation.x += 0.01
   })
-  const materialProps = useControls({
-    thickness: {value: 3, min: 0, max: 3, step: 0.1},
-    roughness: {value: 0.3, min: 0, max: 3, step: 0.1},
-    transmission: {value: 3, min: 0, max: 3, step: 0.1},
-    ior: {value: 0, min: 0, max: 3, step: 0.1},
-    chromaticAberration: {value: 0.8, min: 0, max: 3, step: 0.1},
-    backside: {value: true},
-  })
-  const textProps = useControls({
-    thickness: {value: 0, min: 0, max: 3, step: 0.1},
-    roughness: {value: 0.3, min: 0, max: 3, step: 0.1},
-    transmission: {value: 0, min: 0, max: 3, step: 0.1},
-    ior: {value: 0, min: 0, max: 3, step: 0.1},
-    chromaticAberration: {value: 0.8, min: 0, max: 3, step: 0.1},
-    backside: {value: true},
-  })
+  const materialProps = {
+    thickness: 3,
+    roughness: 0.3,
+    transmission: 3,
+    ior: 0,
+    chromaticAberration: 0.8,
+    backside: true,
+  };
+
+  const textProps = {
+    thickness: 3,
+    roughness: 0.3,
+    transmission: 2,
+    ior: 0,
+    chromaticAberration: .1,
+    backside: true,
+  };
   return (
     <group {...props} dispose={null}>
       <Text fontSize={.5} position={[0, -2, 1.9]} font='fonts/PPNeueMontreal-Bold.otf' >

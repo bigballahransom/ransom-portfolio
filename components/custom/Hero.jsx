@@ -52,7 +52,7 @@ const Hero = () => {
       <section class="text-gray-600 body-font">
   <div class="container mx-auto flex px-5 pb-24 items-center justify-center flex-col">
     <div class="text-center lg:w-2/3 w-full">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Software Engineer</h1>
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Front-End Engineer</h1>
       <p class="mb-8 leading-relaxed">A multi-tool of business and technical skills. Goal oriented individual, with strong problem-solving skills. I bring a track record of success working in a start-up environment. Strong entrepreneurial spirit, hard working, and up for new challenges!</p>
       <div class="flex justify-center gap-2">
         <Link href='/contact'>

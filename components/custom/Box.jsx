@@ -54,8 +54,8 @@ export function Model(props) {
 //   }, []);
   useFrame( () => {
 
-    mesh.current.rotation.y += 0.02
-    mesh.current.rotation.x += 0.01
+    mesh.current.rotation.y += 0.01
+    mesh.current.rotation.x += -0.0005
   })
   const materialProps = {
     thickness: 3,
@@ -78,7 +78,7 @@ export function Model(props) {
     <group {...props} dispose={null}>
       <Text fontSize={.5} position={[0, -2, 1.9]} font='fonts/PPNeueMontreal-Bold.otf' >
         Andrew Ransom
-        <MeshTransmissionMaterial {...textProps}/>
+        <meshBasicMaterial color='#89797a'/>
       </Text>
       <group scale={0.006} ref={mesh}>
       <MeshTransmissionMaterial {...materialProps}/>

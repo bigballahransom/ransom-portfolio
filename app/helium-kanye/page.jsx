@@ -2,6 +2,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { IoBalloonOutline } from "react-icons/io5";
+import Link from "next/link";
 
 const tracks = [
   {
@@ -68,9 +69,16 @@ const Page = () => {
   return (
     <div className="bg-white">
       <main className="flex min-h-screen flex-col items-center justify-center bg-gray-200">
-      <div className='fixed top-0 p-4 bg-white w-full flex items-center gap-2'>
+      <div className='fixed top-0 p-4 bg-white w-full flex justify-between'>
+      <div className='flex items-center gap-2'>
       <IoBalloonOutline />
         Helium Kanye
+        </div>
+        <div>
+            <Link href='/'>
+                <button className='button border shadow-xl text-sm'>Back to Andrew's Portfolio</button>
+            </Link>
+        </div>
       </div>
         <div className="bg-accent flex h-fit flex-col rounded-full text-center shadow-lg">
           <Image src='/assets/images/kanye.jpeg' width={100} height={100} className='text-white rounded-full p-1 shadow'/>

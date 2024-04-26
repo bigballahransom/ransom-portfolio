@@ -34,17 +34,17 @@ const Navbar = () => {
         <Link href="/" className="hover:text-white py-2">
           Home
         </Link>
-        <Link href="/mover-search" className="hover:text-white py-2 px-2">
-          Mover Search
+        <Link href="https://www.bookqube.com" className="hover:text-white py-2 px-2">
+          Qube
         </Link>
         {/* <Link href="/explore-all-movers" className="hover:text-primary-100 py-2">
           Explore All Movers
         </Link> */}
         <Link
           className="text-primary-100 hover:text-white hover:bg-primary-100 py-2 px-0 rounded-full"
-          href="https://www.qube-software.com"
+          href="/helium-kanye"
         >
-          Mover Registration
+          Helium Kanye
         </Link>
       </div>
       <div onClick={handleNav} className="md:hidden cursor-pointer">
@@ -105,21 +105,21 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="/mover-search"
+            href="https://www.bookqube.com"
             className="hover:text-white py-4"
             onClick={handleLinkClick}
           >
-            Mover Search
+            Qube
           </Link>
           {/* <Link href="/explore-all-movers" className="hover:text-primary-100 py-4">
             Explore All Movers
           </Link> */}
           <Link
             className="text-primary-100 hover:text-white py-4 hover:bg-primary-100 px-4 rounded-full"
-            href="https://www.qube-software.com"
+            href="/helium-kanye"
             onClick={handleLinkClick}
           >
-            Mover Registration
+            Helium Kanye
           </Link>
         </div>
       </div>
